@@ -86,54 +86,73 @@
 
     <main class="main-content">
 
-      <h2 class="main-content__title">Моноподы для селфи</h2>
+      <h1 class="main-content__title">Моноподы для селфи</h1>
 
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#"></a>
+            <a class="breadcrumbs__link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Каталог</a>
+            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Инструмент</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <span class="breadcrumbs__link">Перфораторы</span>
+            <span class="breadcrumbs__link">Моноподы для селфи</span>
           </li>
         </ul>
       </div>
 
       <div class="catalog-filter">
+        <h2 class="catalog-filter__title catalog-filter__title--h2">Фильтр:</h2>
         <form class="catalog-filter__form" action="#">
-          <h3 class="catalog-filter__title">Стоимость</h3>
-          <div class="catalog-filter__range">
-            <div class="catalog-filter__controls">
-              <div class="catalog-filter__scale"><div style="margin-left:10px;width:125px;" class="catalog-filter__bar"></div></div>
-              <div class="catalog-filter__toggle catalog-filter__toggle--min"></div>
-              <div class="catalog-filter__toggle catalog-filter__toggle--max"></div>
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__legent">Стоимость</legend>>
+            <div class="catalog-filter__range">
+              <div class="catalog-filter__controls">
+                <div class="catalog-filter__scale"><div style="margin-left:10px;width:125px;" class="catalog-filter__bar"></div></div>
+                <div class="catalog-filter__toggle catalog-filter__toggle--min"></div>
+                <div class="catalog-filter__toggle catalog-filter__toggle--max"></div>
+              </div>
+              <div class="catalog-filter__price-controls">
+                <label class="min-price"><input class="min-price" type="text" value="0"><span> </span></label>
+                <label class="max-price"><input class="max-price" type="text" value="30000"></label>
+              </div>
             </div>
-            <div class="catalog-filter__price-controls">
-              <label class="min-price"><input class="min-price" type="text" value="0"><span> </span></label>
-              <label class="max-price"><input class="max-price" type="text" value="30000"></label>
-            </div>
-          </div>
-          <div class="catalog-filter__crease"></div>
-          <div class="catalog-filter__color">
-            <h3 class="catalog-filter__title">Цвет</h3>
-            <input class="catalog-filter__input" type="checkbox" name="color1" value="black" checked id="chx1"><label class="catalog-filter__label" for="chx1">Черный</label>
-            <input class="catalog-filter__input" type="checkbox" name="color2" value="white" id="chx2"><label class="catalog-filter__label" for="chx2">Белый</label>
-            <input class="catalog-filter__input" type="checkbox" name="color3" value="blue" checked id="chx3"><label class="catalog-filter__label" for="chx3">Синий</label>
-            <input class="catalog-filter__input" type="checkbox" name="color4" value="red" id="chx4"><label class="catalog-filter__label" for="chx4">Красный</label>
-            <input class="catalog-filter__input" type="checkbox" name="color5" value="pink" id="chx5"><label class="catalog-filter__label" for="chx5">Розовый</label>
-          </div>
-          <div class="catalog-filter__crease"></div>
-          <div class="catalog-filter__blutooth">
-            <h3 class="catalog-filter__title">Bluetooth</h3>
-            <input class="catalog-filter__input" type="radio" name="available" value="Yes" checked id="rd1"><label class="catalog-filter__label" for="rd1">Есть</label>
-            <input class="catalog-filter__input" type="radio" name="available" value="No" id="rd2"><label class="catalog-filter__label" for="rd2">Нет</label>
-          </div>
+          </fieldset>
+          <fieldset class="catalog-filter__fieldset">
+            <legend class="catalog-filter__legent">Цвет</legend>
+            <label class="catalog-filter__label">
+              <input class="catalog-filter__input" type="checkbox" name="color1" value="black" checked>
+              <span class="catalog-filter__desk">Черный</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input class="catalog-filter__input" type="checkbox" name="color2" value="white">
+              <span class="catalog-filter__desk">Белый</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input class="catalog-filter__input" type="checkbox" name="color3" value="blue" checked>
+              <span class="catalog-filter__desk">Синий</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input class="catalog-filter__input" type="checkbox" name="color4" value="red" checked>
+              <span class="catalog-filter__desk">Красный</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input class="catalog-filter__input" type="checkbox" name="color5" value="pink">
+              <span class="catalog-filter__desk">Розовый</span>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend class="catalog-filter__legent">Bluetooth</legend>
+            <label class="catalog-filter__label">
+              <input class="catalog-filter__input" type="radio" name="available" value="Yes" checked>
+              <span class="catalog-filter__desk">Есть</span>
+            </label>
+            <label class="catalog-filter__label">
+              <input class="catalog-filter__input" type="radio" name="available" value="No">
+              <span class="catalog-filter__desk">Нет</span>
+            </label>
+          </fieldset>
           <button class="catalog-filter__btn" type="submit">ПОКАЗАТЬ</button>
         </form>
       </div>
@@ -141,7 +160,7 @@
       <section class="catalog-products">
 
         <div class="sorting">
-          <h3 class="sorting__title">сортировка:</h3>
+          <h2 class="sorting__title">сортировка:</h2>
           <ul class="sorting__list">
             <li class="sorting__item">
               <a class="sorting__link" href="#">По цене</a>
@@ -154,57 +173,77 @@
             </li>
           </ul>
           <div class="sorting__guides">
-            <a class="sorting__link" href="#"></a>
-            <a class="sorting__link" href="#"></a>
+            <a class="sorting__link" href="#"><span class="sorting__desk sorting__desk--invisible">Стрелочка вверх</span></a>
+            <a class="sorting__link" href="#"><span class="sorting__desk sorting__desk--invisible">Стрелочка вниз</span></a>
           </div>
         </div>
 
         <section class="catalog-products">
-          <articl class="catalog-products__item">
-            <div class="catalog-products__actions">
-              <a class="catalog-products__link catalog-products__link--basket" href="#">В корзину</a>
-              <a class="catalog-products__link" href="#">Добавить к сравнению</a>
-            </div>
+          <article class="catalog-products__item">
             <img class="catalog-products__img" src="#" alt="Любительская селфи-палка">
-            <a class="catalog-products__text">Любительская селфи-палка</a>
+            <h3 class="catalog-filter__title">
+              <a class="catalog-products__text">Любительская селфи-палка</a>
+            </h3>
             <p class="catalog-products__text">500руб</p>
-          </articl>
-          <articl class="catalog-products__item">
             <div class="catalog-products__actions">
-              <a class="catalog-products__link catalog-products__link--basket" href="#">В корзину</a>
+              <a class="btn" href="#">В корзину</a>
               <a class="catalog-products__link" href="#">Добавить к сравнению</a>
             </div>
+          </article>
+          <article class="catalog-products__item">
             <img class="catalog-products__img" src="#" alt="Профессиональная селфи-палка">
-            <a class="catalog-products__text">Профессиональная селфи-палка</a>
+            <h3 class="catalog-filter__title">
+              <a class="catalog-products__text">Профессиональная селфи-палка</a>
+            </h3>
             <p class="catalog-products__text">1 500руб</p>
-          </articl>
-          <articl class="catalog-products__item">
             <div class="catalog-products__actions">
-              <a class="catalog-products__link catalog-products__link--basket" href="#">В корзину</a>
+              <a class="btn" href="#">В корзину</a>
               <a class="catalog-products__link" href="#">Добавить к сравнению</a>
             </div>
+          </article>
+          <article class="catalog-products__item">
             <img class="catalog-products__img" src="#" alt="Непотопляемая селфи-палка">
-            <a class="catalog-products__text">Непотопляемая селфи-палка</a>
+            <h3 class="catalog-filter__title">
+              <a class="catalog-products__text">Непотопляемая селфи-палка</a>
+            </h3>
             <p class="catalog-products__text">2 500руб</p>
-          </articl>
-          <articl class="catalog-products__item">
             <div class="catalog-products__actions">
-              <a class="catalog-products__link catalog-products__link--basket" href="#">В корзину</a>
+              <a class="btn" href="#">В корзину</a>
               <a class="catalog-products__link" href="#">Добавить к сравнению</a>
             </div>
+          </article>
+          <article class="catalog-products__item">
             <div class="catalog-products__flag">new</div>
             <img class="catalog-products__img" src="#" alt="Селфи-палка «Следуй за мной»">
-            <a class="catalog-products__text">Селфи-палка «Следуй за мной»</a>
+            <h3 class="catalog-filter__title">
+             <a class="catalog-products__text">Селфи-палка «Следуй за мной»</a>
+            </h3>
             <p class="catalog-products__text">4 900руб </p>
-          </articl>
+            <div class="catalog-products__actions">
+              <a class="btn" href="#">В корзину</a>
+              <a class="catalog-products__link" href="#">Добавить к сравнению</a>
+            </div>
+          </article>
         </section>
 
         <div class="paginator">
-          <a class="paginator__link paginator__link--prev" href="#">назад</a>
-          <a class="paginator__link paginator__link--curent" href="#">1</a>
-          <a class="paginator__link" href="#">2</a>
-          <a class="paginator__link" href="#">3</a>
-          <a class="paginator__link paginator__link--next" href="#">вперед</a>
+          <ul class="paginator__list">
+            <li class="paginator__item">
+              <a class="paginator__link paginator__link--prev" href="#">назад</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link paginator__link--curent" href="#">1</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">2</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">3</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link paginator__link--next" href="#">вперед</a>
+            </li>
+          </ul>
         </div>
 
       </section>

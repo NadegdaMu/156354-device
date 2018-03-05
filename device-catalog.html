@@ -14,64 +14,59 @@
 
     <header class="header-main">
 
-      <div class="header-left">
-        <a class="header-left__logo" href="device-index.html">Device</a>
+      <div class="header-scope">
+        <a class="header-scope__logo"><img class="header-scope__img" src="#" alt="Device"><span class="header-scope__invisible">Device</span></a>
 
-        <form class="header-left__form" action="#">
-          <input class="header-left__search" type="search" placeholder="Поиск:">
-          <input class="header-left__input" type="submit">
+        <form class="header-scope__form" action="#">
+          <input class="header-scope__search" type="search" placeholder="Поиск по сайту">
+          <button class="header-scope__input" type="submit">Найти</button>
         </form>
 
-        <div class="catalog">
-          <a class="catalog__link" href="catalog.html">Каталог товаров</a>
-          <button class="catalog__button" type="submit"></button>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <a class="catalog__link">Виртуальная реальность</a>
-            </li>
-            <li class="catalog__item">
-              <a class="catalog__link">Моноподы для селфи</a>
-            </li>
-            <li class="catalog__item">
-              <a class="catalog__link">Экшен-камеры</a>
-            </li>
-            <li class="catalog__item">
-              <a class="catalog__link">Фитнес браслеты</a>
-            </li>
-            <li class="catalog__item">
-              <a class="catalog__link">Умные часы</a>
-            </li>
-            <li class="catalog__item">
-              <a class="catalog__link">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
-
+        <ul class="header-scope__list">
+          <li class="header-scope__item">
+            <a class="header-scope__link" href="#">Валентин Петухов</a>
+            <a class="header-scope__link" href="#">Выйти</a>
+          </li>
+          <li class="header-scope__item">
+            <a class="header-scope__link" href="#">Сравнить</a>
+          </li>
+          <li class="header-scope__item">
+            <a class="header-scope__link" href="#">Корзина</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="header-right">
-
-        <div class="header-top">
-          <ul class="header-top__list">
-            <li class="header-top__item">
-              <a class="header-top__link" href="#">Войти</a>
-            </li>
-            <li class="header-top__item">
-              <a class="header-top__link" href="#">Сравнить</a>
-            </li>
-            <li class="header-top__item">
-              <a class="header-top__link" href="#">Корзина</a>
-            </li>
-          </ul>
-        </div>
-
+      <div class="header-navigation">
         <nav class="main-nav">
           <ul class="main-nav__list">
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link">Виртуальная реальность</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link">Моноподы для селфи</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link">Экшен-камеры</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link">Фитнес браслеты</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link">Умные часы</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link">Квадрокоптеры</a>
+                  </li>
+                </ul>
+            </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Доставка</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Гарантии</a>
+              <a class="main-nav__link" href="#">Гарантия</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Контакты</a>
@@ -82,7 +77,6 @@
       </div>
 
     </header>
-
 
     <main class="main-content">
 
@@ -103,7 +97,7 @@
       </div>
 
       <div class="catalog-filter">
-        <h2 class="catalog-filter__title catalog-filter__title--h2">Фильтр:</h2>
+        <h2 class="catalog-filter__title">Фильтр:</h2>
         <form class="catalog-filter__form" action="#">
           <fieldset class="catalog-filter__fieldset">
             <legend class="catalog-filter__legent">Стоимость</legend>>
@@ -115,7 +109,7 @@
               </div>
               <div class="catalog-filter__price-controls">
                 <label class="min-price"><input class="min-price" type="text" value="0"><span> </span></label>
-                <label class="max-price"><input class="max-price" type="text" value="30000"></label>
+                <label class="max-price"><input class="max-price" type="text" value="5000"></label>
               </div>
             </div>
           </fieldset>
@@ -181,7 +175,7 @@
         <section class="catalog-products">
           <article class="catalog-products__item">
             <img class="catalog-products__img" src="#" alt="Любительская селфи-палка">
-            <h3 class="catalog-filter__title">
+            <h3 class="catalog-products__title">
               <a class="catalog-products__text">Любительская селфи-палка</a>
             </h3>
             <p class="catalog-products__text">500руб</p>
@@ -192,7 +186,7 @@
           </article>
           <article class="catalog-products__item">
             <img class="catalog-products__img" src="#" alt="Профессиональная селфи-палка">
-            <h3 class="catalog-filter__title">
+            <h3 class="catalog-products__title">
               <a class="catalog-products__text">Профессиональная селфи-палка</a>
             </h3>
             <p class="catalog-products__text">1 500руб</p>
@@ -203,7 +197,7 @@
           </article>
           <article class="catalog-products__item">
             <img class="catalog-products__img" src="#" alt="Непотопляемая селфи-палка">
-            <h3 class="catalog-filter__title">
+            <h3 class="catalog-products__title">
               <a class="catalog-products__text">Непотопляемая селфи-палка</a>
             </h3>
             <p class="catalog-products__text">2 500руб</p>
@@ -215,7 +209,7 @@
           <article class="catalog-products__item">
             <div class="catalog-products__flag">new</div>
             <img class="catalog-products__img" src="#" alt="Селфи-палка «Следуй за мной»">
-            <h3 class="catalog-filter__title">
+            <h3 class="catalog-products__title">
              <a class="catalog-products__text">Селфи-палка «Следуй за мной»</a>
             </h3>
             <p class="catalog-products__text">4 900руб </p>
@@ -258,7 +252,7 @@
 
          <ul class="additional-information__list">
             <li class="additional-information__item">
-              <a class="additional-information__link">Валентин Петухов</a>
+              <a class="additional-information__link" href="#">Валентин Петухов</a>
               <a class="additional-information__link" href="#">Выйти</a>
             </li>
             <li class="additional-information__item">
@@ -283,7 +277,7 @@
               <a class="main-nav__link" href="#">Доставка</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Гарантии</a>
+              <a class="main-nav__link" href="#">Гарантия</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Контакты</a>
@@ -297,17 +291,22 @@
 
       <div class="additional-data">
 
-         <ul class="additional-data__list">
-          <li class="additional-data__item">
-            <a class="additional-data__link additional-data__link--fb" href="#"></a>
-          </li>
-          <li class="additional-data__item">
-            <a class="additional-data__link additional-data__link--ins" href="#"></a>
-          </li>
-          <li class="additional-data__item">
-            <a class="additional-data__link additional-data__link--tvit" href="#"></a>
-          </li>
-        </ul>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#"><span class="social__desk social__desk--invisible">Иконка фейсбука</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ins" href="#"><span class="social__desk social__desk--invisible">Иконка инстограмм</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twit" href="#"><span class="social__desk social__desk--invisible">Иконка твитера</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="additional-data__link" href="https://htmlacademy.ru/"><span class="additional-data__invisible">Иконка htmlacademy</span></a>
+
       </div>
 
     </footer>

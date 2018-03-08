@@ -18,7 +18,7 @@
    viewBox="0 0 12 12"
    enable-background="new 0 0 12 12"
    xml:space="preserve"
-   sodipodi:docname="cart.svg"
+   sodipodi:docname="cart2.svg"
    inkscape:version="0.92.1 r15371"><metadata
      id="metadata842"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -44,7 +44,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1" /><g
      id="g835"
-     style="fill:#ffc600;fill-opacity:1;opacity:1"><path
+     style="fill:#ffc600;fill-opacity:1;opacity:0.6"><path
        d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022   c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438   c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595   c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"
        id="path831"
        style="fill:#ffc600;fill-opacity:1" /><path

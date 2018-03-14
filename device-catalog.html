@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
     <style>
@@ -15,7 +18,7 @@
     <header class="header-main">
 
       <div class="header-scope">
-        <a class="header-scope__logo" href="index.html"><img class="header-scope__img" src="img/header/logo.svg" alt="Device"><span class="header-scope__invisible">Device</span></a>
+        <a class="header-scope__logo" href="index.html"><img class="header-scope__img" src="img/header/logo.svg" alt="Device"><span class="visually-hidden">Device</span></a>
 
         <form class="header-scope__form" action="#">
           <input class="header-scope__search" type="search" placeholder="Поиск по сайту">
@@ -39,9 +42,9 @@
       <div class="header-navigation">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__list">
+            <li class="main-nav__item">
               <a class="main-nav__link">Каталог товаров</a>
-                <ul class="main-nav__list">
+                <ul class="main-nav__list main-nav__list--nested">
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="#">Виртуальная реальность</a>
                   </li>
@@ -108,8 +111,8 @@
                 <div class="catalog-filter__toggle catalog-filter__toggle--max"></div>
               </div>
               <div class="catalog-filter__price-controls">
-                <label class="min-price"><input class="min-price" type="text" value="0"><span> </span></label>
-                <label class="max-price"><input class="max-price" type="text" value="5000"></label>
+                <label class="min-price"><input class="min-price" type="text" value="от 0"><span> </span></label>
+                <label class="max-price"><input class="max-price" type="text" value="до 5000"></label>
               </div>
             </div>
           </fieldset>
@@ -147,7 +150,7 @@
               <span class="catalog-filter__desk">Нет</span>
             </label>
           </fieldset>
-          <button class="catalog-filter__btn" type="submit">ПОКАЗАТЬ</button>
+          <button class="btn" type="submit">ПОКАЗАТЬ</button>
         </form>
       </div>
 
@@ -176,7 +179,7 @@
           <article class="catalog-products__item">
             <img class="catalog-products__img" src="img/catalog-products/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <h3 class="catalog-products__title">
-              <a class="catalog-products__text" href="#">Любительская селфи-палка</a>
+              <a class="catalog-products__link" href="#">Любительская селфи-палка</a>
             </h3>
             <p class="catalog-products__text">500руб</p>
             <div class="catalog-products__actions">
@@ -187,7 +190,7 @@
           <article class="catalog-products__item">
             <img class="catalog-products__img" src="img/catalog-products/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <h3 class="catalog-products__title">
-              <a class="catalog-products__text" href="#">Профессиональная селфи-палка</a>
+              <a class="catalog-products__link" href="#">Профессиональная селфи-палка</a>
             </h3>
             <p class="catalog-products__text">1 500руб</p>
             <div class="catalog-products__actions">
@@ -198,7 +201,7 @@
           <article class="catalog-products__item">
             <img class="catalog-products__img" src="img/catalog-products/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <h3 class="catalog-products__title">
-              <a class="catalog-products__text" href="#">Непотопляемая селфи-палка</a>
+              <a class="catalog-products__link" href="#">Непотопляемая селфи-палка</a>
             </h3>
             <p class="catalog-products__text">2 500руб</p>
             <div class="catalog-products__actions">
@@ -210,7 +213,7 @@
             <div class="catalog-products__flag">new</div>
             <img class="catalog-products__img" src="img/catalog-products/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <h3 class="catalog-products__title">
-             <a class="catalog-products__text" href="#">Селфи-палка «Следуй за мной»</a>
+             <a class="catalog-products__link" href="#">Селфи-палка «Следуй за мной»</a>
             </h3>
             <p class="catalog-products__text">4 900руб </p>
             <div class="catalog-products__actions">
@@ -248,20 +251,21 @@
      <footer class="footer-main">
 
       <div class="additional-information">
-        <a class="additional-information__logo" href="index.html">Device</a>
 
-         <ul class="additional-information__list">
-            <li class="additional-information__item">
-              <a class="additional-information__link" href="#">Валентин Петухов</a>
-              <a class="additional-information__link" href="#">Выйти</a>
-            </li>
-            <li class="additional-information__item">
-              <a class="additional-information__link" href="#">Сравнить</a>
-            </li>
-            <li class="additional-information__item">
-              <a class="additional-information__link" href="#">Корзина</a>
-            </li>
-          </ul>
+        <a class="additional-information__logo"><img class="additional-information__img" src="img/footer/logo.svg" alt="Device"><span class="visually-hidden">Device</span></a>
+
+        <ul class="additional-information__list">
+          <li class="additional-information__item">
+            <a class="additional-information__link" href="#">Валентин Петухов</a>
+            <a class="additional-information__link" href="#">Выйти</a>
+          </li>
+          <li class="additional-information__item">
+            <a class="additional-information__link" href="#">Сравнить</a>
+          </li>
+          <li class="additional-information__item">
+            <a class="additional-information__link" href="#">Корзина</a>
+          </li>
+        </ul>
 
       </div>
 

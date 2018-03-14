@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
 
@@ -16,7 +19,7 @@
     <header class="header-main">
 
       <div class="header-scope">
-        <a class="header-scope__logo"><img class="header-scope__img" src="img/header/logo.svg" alt="Device"><span class="header-scope__invisible">Device</span></a>
+        <a class="header-scope__logo"><img class="header-scope__img" src="img/header/logo.svg" alt="Device"><span class="visually-hidden">Device</span></a>
 
         <form class="header-scope__form" action="#">
           <input class="header-scope__search" type="search" placeholder="Поиск по сайту">
@@ -39,9 +42,9 @@
       <div class="header-navigation">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__list">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="№">Каталог товаров</a>
-                <ul class="main-nav__list">
+                <ul class="main-nav__list main-nav__list--nested">
                   <li class="main-nav__item">
                     <a class="main-nav__link" href="#">Виртуальная реальность</a>
                   </li>
@@ -271,19 +274,20 @@
     <footer class="footer-main">
 
       <div class="additional-information">
-        <a class="additional-information__logo">Device</a>
 
-         <ul class="additional-information__list">
-            <li class="additional-information__item">
-              <a class="additional-information__link" href="#">Войти</a>
-            </li>
-            <li class="additional-information__item">
-              <a class="additional-information__link" href="#">Сравнить</a>
-            </li>
-            <li class="additional-information__item">
-              <a class="additional-information__link" href="#">Корзина</a>
-            </li>
-          </ul>
+        <a class="additional-information__logo"><img class="additional-information__img" src="img/footer/logo.svg" alt="Device"><span class="visually-hidden">Device</span></a>
+
+        <ul class="additional-information__list">
+          <li class="additional-information__item">
+            <a class="additional-information__link" href="#">Войти</a>
+          </li>
+          <li class="additional-information__item">
+            <a class="additional-information__link" href="#">Сравнить</a>
+          </li>
+          <li class="additional-information__item">
+            <a class="additional-information__link" href="#">Корзина</a>
+          </li>
+        </ul>
 
       </div>
 

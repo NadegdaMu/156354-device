@@ -1,0 +1,53 @@
+<svg
+   xmlns:x="adobe:ns:meta/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg4503"
+   version="1.1"
+   viewBox="0 0 162 36"
+   height="36"
+   width="162">
+  <defs
+     id="defs4500">
+    <style
+       id="style4498">
+      .cls-1 {
+        font-size: 48px;
+        font-family: Gilroy;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g
+     id="DEVICE"
+     style="font-weight:800;font-size:48px;font-family:Gilroy"
+     aria-label="DEVICE">
+    <path
+       id="path5050"
+       style="font-weight:800;font-size:48px;font-family:Gilroy"
+       d="M 13.237,1.025 H -0.20299994 v 33.6 H 13.237 c 9.264,0 16.32,-7.296 16.32,-16.8 0,-9.504 -7.056,-16.8 -16.32,-16.8 z m 0,26.208 H 7.4770001 V 8.417 H 13.237 c 5.28,0 8.928,3.648 8.928,9.408 0,5.76 -3.648,9.408 -8.928,9.408 z" />
+    <path
+       id="path5052"
+       style="font-weight:800;font-size:48px;font-family:Gilroy"
+       d="m 41.602,27.233 v -5.952 h 12 v -7.296 h -12 V 8.417 h 13.2 V 1.025 h -20.88 v 33.6 h 21.12 v -7.392 z" />
+    <path
+       id="path5054"
+       style="font-weight:800;font-size:48px;font-family:Gilroy"
+       d="m 67.39225,34.625 h 9.792 l 10.944,-33.6 h -8.4 l -7.44,24.72 -7.44,-24.72 h -8.4 z" />
+    <path
+       id="path5056"
+       style="font-weight:800;font-size:48px;font-family:Gilroy"
+       d="m 91.01575,1.025 v 33.6 h 7.68 v -33.6 z" />
+    <path
+       id="path5058"
+       style="font-weight:800;font-size:48px;font-family:Gilroy"
+       d="m 120.454,35.297 c 6.144,0 11.52,-3.024 14.4,-7.776 l -6.624,-3.84 c -1.44,2.592 -4.368,4.128 -7.776,4.128 -5.952,0 -9.792,-3.984 -9.792,-9.984 0,-6 3.84,-9.984 9.792,-9.984 3.408,0 6.288,1.536 7.776,4.128 l 6.624,-3.84 c -2.928,-4.752 -8.304,-7.776 -14.4,-7.776 -10.128,0 -17.472,7.584 -17.472,17.472 0,9.888 7.344,17.472 17.472,17.472 z" />
+    <path
+       id="path5060"
+       style="font-weight:800;font-size:48px;font-family:Gilroy"
+       d="m 146.13325,27.233 v -5.952 h 12 v -7.296 h -12 V 8.417 h 13.2 V 1.025 h -20.88 v 33.6 h 21.12 v -7.392 z" />
+  </g>
+</svg>

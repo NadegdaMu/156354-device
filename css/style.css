@@ -39,16 +39,38 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
   color: #000;
   background-color: #fff;
 }
 
+/* index */
+
+/* header */
 .header-main {
   background-color: #f7e296;
+}
+
+.header-scope__search {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  background-color: #f7e296;
+  color: #000;
+  border: none;
+  opacity: 0.3;
+}
+
+.header-scope__search:hover {
+   opacity: 0.6;
+}
+
+.header-scope__search:focus {
+  color: #000;
 }
 
 .header-scope__input {
@@ -93,11 +115,20 @@ body {
 
 .main-nav__list {
   list-style: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
 }
 
 .main-nav__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
   text-decoration: none;
   color: #000;
+  text-transform: uppercase;
 }
 
 .main-nav__link:hover {
@@ -115,43 +146,81 @@ body {
   font-weight: 300;
 }
 
-.goods__version {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 56px;
-}
-
-.goods__text {
+.main-nav__list--nested .main-nav__link {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
+  text-transform: none;
+}
+
+/* main-content */
+/* slider блок goods*/
+
+.goods__text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.goods__desk {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #000;
 }
 
 .btn {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   text-decoration: none;
   color: #000;
+  text-transform: uppercase;
 }
 
-.goods__line {
+.goods__line .goods__cell {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
-  line-height: 38px;
+  line-height: 48px;
   font-weight: 300;
 }
 
-.goods__line:nth-child(2) {
+.goods__line:nth-child(2) .goods__cell {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
+  color: #464646;
+}
+
+/* блок products */
+
+.products__list {
+  list-style: none;
 }
 
 .products__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
   text-decoration: none;
   color: #000;
+}
+
+/* блок servis */
+
+.services__control {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .services__control:active {
@@ -163,8 +232,10 @@ body {
 }
 
 .services__title {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
 }
 
 .services__text {
@@ -175,9 +246,13 @@ body {
   color: #464646;
 }
 
+/* блок information-company */
+
 .information-company__title {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
 }
 
 .information-company__text {
@@ -190,21 +265,28 @@ body {
 
 .information-company__list {
   list-style: none;
+}
+
+.information-company__item {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
+  font-weight: 800;
 }
+
+/* footer  */
 
 .footer-main {
   background-color: #464646;
 }
 
-/* footer  */
+/* блок additional-information */
 
 .additional-information__list {
   list-style: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 30px;
   font-weight: 300;
 }
 
@@ -221,12 +303,14 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* блок address */
+
 .address__text,
 .address__link {
   list-style: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 30px;
   font-weight: 300;
   color: #fff;
   text-decoration: none;
@@ -236,10 +320,46 @@ body {
   color: #fff;
 }
 
+
+/* стилизация модальных окон */
+
+.modal__text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.modal__input {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #464646;
+  background-color: #f2f2f2;
+  border: none;
+  opacity: 0.4;
+}
+.название класса input::-webkit-input-placeholder {color:#c0392b;}
+.название класса input::-moz-placeholder {color:#c0392b;}/* Firefox 19+ */
+.название класса input:-moz-placeholder {color:#c0392b;}/* Firefox 18- */
+.название класса input:-ms-input-placeholder {color:#c0392b;}
+
+.modal__input:hover {
+  background-color: #eaeaea;
+}
+
+.modal__input:focus {
+  background-color: #fff;
+  border: 2px solid #f7e296;
+  color: #464646;
+}
+
 .modal__lower .modal__send {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000;
   padding: 0;
   border: none;
@@ -248,8 +368,10 @@ body {
 /* стилизация device-catalog */
 
 .main-content__title {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
 }
 
 .breadcrumbs__list {
@@ -275,13 +397,27 @@ body {
 
 .catalog-filter__title,
 .sorting__title {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
+  line-height: 24px;
   letter-spacing: 5px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.catalog-filter__legent {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
 }
 
 .min-price,
 .max-price {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .catalog-filter__desk {
@@ -315,20 +451,21 @@ body {
   color: #000;
 }
 
-.catalog-products__title {
-   font-weight: 800;
-}
-
-.catalog-products__link {
+.catalog-products__title .catalog-products__link {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-
+  line-height: 24px;
+  font-weight: 800;
   color: #000;
   text-decoration: none;
 }
 
 .catalog-products__text {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: lighter;
+  line-height: 24px;
+  font-weight: 300;
+ color: #464646;
 }
 
 .catalog-products__actions .catalog-products__link {
@@ -336,12 +473,48 @@ body {
   font-size: 13px;
   line-height: 36px;
   font-weight: 300;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+}
+
+.catalog-products__actions .catalog-products__link:hover {
+  opacity: 1;
+}
+
+.catalog-products__actions .catalog-products__link:active {
+  opacity: 0.2;
 }
 
 .paginator__link {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
   text-decoration: none;
   color: #000;
+  opacity: 0.3;
+}
+
+.paginator__link--curent {
+  color: #000;
+  opacity: 1;
+}
+
+.paginator__link--prev,
+.paginator__link--next {
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.paginator__link--prev:hover,
+.paginator__link--next:hover {
+  background-color: #d9d9d9;
+}
+
+.paginator__link--prev:active,
+.paginator__link--next:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .paginator__list {

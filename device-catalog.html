@@ -111,8 +111,12 @@
                 <div class="catalog-filter__toggle catalog-filter__toggle--max"></div>
               </div>
               <div class="catalog-filter__price-controls">
-                <label class="min-price"><input class="min-price" type="text" value="от 0"><span> </span></label>
-                <label class="max-price"><input class="max-price" type="text" value="до 5000"></label>
+                <label class="min-price">от
+                  <input class="min-price" type="text" name="min" value="0">
+                </label>
+                <label class="max-price">до
+                  <input class="max-price" type="text" name="max" value="5000">
+                </label>
               </div>
             </div>
           </fieldset>
@@ -226,7 +230,7 @@
         <div class="paginator">
           <ul class="paginator__list">
             <li class="paginator__item">
-              <a class="paginator__link paginator__link--prev" href="#">назад</a>
+              <a class="paginator__link paginator__link--prev" href="#">Назад</a>
             </li>
             <li class="paginator__item">
               <a class="paginator__link paginator__link--curent" href="#">1</a>
@@ -238,7 +242,7 @@
               <a class="paginator__link" href="#">3</a>
             </li>
             <li class="paginator__item">
-              <a class="paginator__link paginator__link--next" href="#">вперед</a>
+              <a class="paginator__link paginator__link--next" href="#">Вперед</a>
             </li>
           </ul>
         </div>

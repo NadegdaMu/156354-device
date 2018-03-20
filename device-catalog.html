@@ -10,12 +10,13 @@
   <body>
     <style>
        BODY {
-        background: url() 50% 0 no-repeat;
+        background: url(background/catalog.jpg) 50% 0 no-repeat;
       }
 
     </style>
 
     <header class="header-main">
+      <div class="container-wraper container-wraper--catalog">
 
       <div class="header-scope">
         <a class="header-scope__logo" href="index.html"><img class="header-scope__img" src="img/header/logo.svg" alt="Device"><span class="visually-hidden">Device</span></a>
@@ -78,32 +79,44 @@
         </nav>
 
       </div>
+      </div>
 
     </header>
 
     <main class="main-content">
 
-      <h1 class="main-content__title">Моноподы для селфи</h1>
 
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Главная</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <span class="breadcrumbs__link">Моноподы для селфи</span>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="main-content__wraper">
+
+          <h1 class="main-content__title">Моноподы для селфи</h1>
+
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">Моноподы для селфи</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
+      <div class="main-content__wrap">
+
       <div class="catalog-filter">
-        <h2 class="catalog-filter__title">Фильтр:</h2>
+        <div class="catalog-filter__wrap">
+          <h2 class="catalog-filter__title">Фильтр:</h2>
+        </div>
+        <div class="catalog-filter__wrap">
         <form class="catalog-filter__form" action="#">
           <fieldset class="catalog-filter__fieldset">
-            <legend class="catalog-filter__legent">Стоимость</legend>>
+            <legend class="catalog-filter__legent">Стоимость</legend>
             <div class="catalog-filter__range">
               <div class="catalog-filter__controls">
                 <div class="catalog-filter__scale"><div style="margin-left:10px;width:125px;" class="catalog-filter__bar"></div></div>
@@ -122,28 +135,30 @@
           </fieldset>
           <fieldset class="catalog-filter__fieldset">
             <legend class="catalog-filter__legent">Цвет</legend>
+
             <label class="catalog-filter__label">
-              <input class="catalog-filter__input" type="checkbox" name="color1" value="black" checked>
+              <input class="visually-hidden" type="checkbox" name="color1" value="black" checked>
               <span class="catalog-filter__desk">Черный</span>
             </label>
             <label class="catalog-filter__label">
-              <input class="catalog-filter__input" type="checkbox" name="color2" value="white">
+              <input class="visually-hidden" type="checkbox" name="color2" value="white">
               <span class="catalog-filter__desk">Белый</span>
             </label>
             <label class="catalog-filter__label">
-              <input class="catalog-filter__input" type="checkbox" name="color3" value="blue" checked>
+              <input class="visually-hidden" type="checkbox" name="color3" value="blue" checked>
               <span class="catalog-filter__desk">Синий</span>
             </label>
             <label class="catalog-filter__label">
-              <input class="catalog-filter__input" type="checkbox" name="color4" value="red" checked>
+              <input class="visually-hidden" type="checkbox" name="color4" value="red" checked>
               <span class="catalog-filter__desk">Красный</span>
             </label>
             <label class="catalog-filter__label">
-              <input class="catalog-filter__input" type="checkbox" name="color5" value="pink">
+              <input class="visually-hidden" type="checkbox" name="color5" value="pink">
               <span class="catalog-filter__desk">Розовый</span>
             </label>
+
           </fieldset>
-          <fieldset>
+          <fieldset  class="catalog-filter__fieldset">
             <legend class="catalog-filter__legent">Bluetooth</legend>
             <label class="catalog-filter__label">
               <input class="catalog-filter__input" type="radio" name="available" value="Yes" checked>
@@ -156,9 +171,12 @@
           </fieldset>
           <button class="btn" type="submit">ПОКАЗАТЬ</button>
         </form>
+        </div>
       </div>
 
       <section class="catalog-products">
+
+        <div class="catalog-products__wrap">
 
         <div class="sorting">
           <h2 class="sorting__title">сортировка:</h2>
@@ -214,7 +232,7 @@
             </div>
           </article>
           <article class="catalog-products__item">
-            <div class="catalog-products__flag">new</div>
+            <div class="catalog-products__flag">New</div>
             <img class="catalog-products__img" src="img/catalog-products/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <h3 class="catalog-products__title">
              <a class="catalog-products__link" href="#">Селфи-палка «Следуй за мной»</a>
@@ -246,8 +264,10 @@
             </li>
           </ul>
         </div>
-
+        </div>
       </section>
+
+      </div>
 
     </main>
 

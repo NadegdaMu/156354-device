@@ -483,9 +483,9 @@ body {
   outline: 2px solid #4a9110;  /* потом удалить */
 }
 
-.manufactures__item {
+/*.manufactures__item {
   position: relative;
-}
+}*/
 
 .manufactures__link {
   display: block;
@@ -494,38 +494,32 @@ body {
   opacity: 0.3;
 
 }
-/* Пробовала реализовать в блоке manufactures появление второй картинке над первой через ackground без вписания этой картики в HTML*/
-/*
-.manufactures__item:hover .manufactures__link::after {
-  content: "";
+.manufactures__link:hover .manufactures__img {
+  opacity: 0;
+}
+
+.manufactures__link:hover {
   display: block;
   width: 260px;
   height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  background-image: url(../img/manufactures/firm-1-color.png) no-repeat;
   opacity: 1;
-  z-index: 10;
-}*/
-
-.manufactures__link--actions {
-  display: none;
-  width: 260px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  opacity: 1;
-  z-index: 10;
 }
 
-.manufactures__item:hover .manufactures__link--actions {
-  display: block;
+.manufactures__item:nth-child(1) .manufactures__link:hover {
+  background: url(../img/manufactures/firm-1-color.png) no-repeat 50% 50%;
 }
 
+.manufactures__item:nth-child(2) .manufactures__link:hover {
+  background: url(../img/manufactures/firm-2-color.png) no-repeat 50% 50%;
+}
+
+.manufactures__item:nth-child(3) .manufactures__link:hover {
+  background: url(../img/manufactures/firm-3-color.png) no-repeat 50% 50%;
+}
+
+.manufactures__item:nth-child(4) .manufactures__link:hover {
+  background: url(../img/manufactures/firm-4-color.png) no-repeat 50% 50%;
+}
 
 /* блок information-company */
 

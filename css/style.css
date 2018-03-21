@@ -569,6 +569,7 @@ body {
 .additional-information {
   display: flex;
   justify-content: space-between;
+  padding-top: 35px;
   outline: 2px dashed #0fd7f5; /* для видимости */
 
 }
@@ -757,8 +758,9 @@ body {
 /* фильтр */
 
 .catalog-filter {
+  width: 380px;
   /*background-color: #eee;*/ /* фон блока, потом раскоментировать */
-  outline: 1px solid blue;
+  outline: 1px solid blue;/* для видимости блока, потом убрать */
 }
 
 .catalog-filter__title,
@@ -820,7 +822,7 @@ body {
 
 .sorting {
   display: flex;
-  min-width: 765px;
+  width: 765px;
   min-height: 70px;
   margin-bottom: 70px;
   /*background-color: #ebebeb;*/ /* фон блока потом расоментировать */
@@ -856,10 +858,10 @@ body {
 
 /* стилизация блока карточек товаров */
 
-.catalog-products {
+.catalog-products__list {
   display: flex;
   flex-wrap: wrap;
-
+  width: 765px;
   outline: 1px double #0914e8; /* для видимости блока  */
 }
 

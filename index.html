@@ -12,6 +12,7 @@
     <style>
        BODY {
         background: url(background/device-index.jpg) 50% 0 no-repeat;
+
       }
 
     </style>
@@ -31,13 +32,13 @@
 
           <ul class="header-scope__list">
             <li class="header-scope__item">
-              <a class="header-scope__link" href="#">Войти</a>
+              <a class="header-scope__link header-scope__link--login" href="#">Войти</a>
             </li>
             <li class="header-scope__item">
-              <a class="header-scope__link" href="#">Сравнить</a>
+              <a class="header-scope__link header-scope__link--compare" href="#">Сравнить</a>
             </li>
             <li class="header-scope__item">
-              <a class="header-scope__link" href="#">Корзина</a>
+              <a class="header-scope__link header-scope__link--basket" href="#">Корзина</a>
             </li>
           </ul>
         </div>
@@ -46,7 +47,7 @@
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="№">Каталог товаров</a>
+                <a class="main-nav__link main-nav__link--catalog" href="№">Каталог товаров</a>
                   <ul class="main-nav__list main-nav__list--nested">
                     <li class="main-nav__item">
                       <a class="main-nav__link" href="#">Виртуальная реальность</a>
@@ -104,8 +105,10 @@
               <li class="goods__item goods__item--1">
                 <img class="goods__img" src="img/slider/slider-1.png" width="384" height="486" alt="Фото палки для селфи">
                 <div class="goods__description">
-                  <p class="goods__text"><span class="goods__desk">Делай селфи,</span><span class="goods__desk">как Бен Стиллер!</span></p>
-                  <p class="goods__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <p class="goods__text">
+                    <span class="goods__desk">Делай селфи,</span><br>
+                    <span class="goods__desk">как Бен Стиллер!</span></p>
+                  <p class="goods__text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <a class="btn" href="#">Подробнее</a>
                   <table class="goods__table">
                     <tr class="goods__line">
@@ -231,7 +234,7 @@
               <ul class="services__list">
                 <li class="services__item services__item--1">
                   <h3 class="services__title">Доставка</h3>
-                  <p class="services__text"><span class="services__desk">Мы с удовольствием доставим ваш товар прямо к вашему</span><span class="services__desk"> подъезду совершенно бесплатно! Ведь мы неплохо</span><span class="services__desk"> заработаем, поднимая его на ваш этаж!</span></p>
+                  <p class="services__text"><span class="services__desk">Мы с удовольствием доставим ваш товар прямо к вашему</span><br><span class="services__desk"> подъезду совершенно бесплатно! Ведь мы неплохо</span><br><span class="services__desk"> заработаем, поднимая его на ваш этаж!</span></p>
                   <img class="services__img" src="img/services/delivery.svg" alt="Картинка курьера">
                 </li>
                 <li class="services__item services__item--2">
@@ -283,15 +286,15 @@
 
           <div class="information-company__wrap">
             <h2 class="information-company__title">О нас</h2>
-            <p class="information-company__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-            <p class="information-company__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <p class="information-company__text">Огромный выбор гаджетов не оставит равнодушным гика,<br>который есть в каждом из нас</p>
+            <p class="information-company__text">Мы можем доставить ваш товар в самые отдаленные точки<br>России! DEVICE работает со многими транспортными компаниями:</p>
             <ul class="information-company__list">
               <li class="information-company__item">Деловые Линии</li>
               <li class="information-company__item">Автотрейдинг</li>
               <li class="information-company__item">ЖелДорЭкспедиция</li>
             </ul>
             <p class="information-company__text">
-              <a class="btn" href="#">Подробнее о нас</a>
+              <a class="btn btn--info" href="#">Подробнее о нас</a>
             </p>
           </div>
           <div class="information-company__wrap">
@@ -299,7 +302,7 @@
             <p class="information-company__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <img class="information-company__img" src="img/information-company/map.jpg" width="560" height="222" alt="Карта">
             <p class="information-company__text">
-              <a class="btn">Напишите нам</a>
+              <a class="btn btn--write-us">Напишите нам</a>
             </p>
           </div>
           </div>
@@ -353,6 +356,8 @@
       </div>
 
       <div class="additional-data">
+
+        <div class="additional-data__wrap"><span class="visually-hidden">Декоративный элемент</span></div>
 
         <div class="social">
           <ul class="social__list">

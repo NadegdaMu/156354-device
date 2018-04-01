@@ -381,17 +381,20 @@ body {
 
 .goods__controls {
   position: absolute;
+  top: 370px;
+  left: 1035px;
   bottom: 200px;
   right: 135px;
+  width: 100px;
   z-index: 20;
 
 }
 
 .control {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-left: 17px;
+  width: 11px;
+  height: 11px;
+  margin-left: 15px;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 50%;
@@ -408,7 +411,7 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 25%;
-  left: 25%;
+  left: 30%;
 }
 
 .goods__list {
@@ -435,13 +438,6 @@ body {
   background-image: linear-gradient(to bottom, #f7e296 27%, #ffffff 27%);
 }
 
-.goods__item--2 .goods__wrap {
-  background-image: linear-gradient(to bottom, #f7e296 28%, #ffffff 28%);
-}
-
-.goods__item--3 .goods__wrap {
-  background-image: linear-gradient(to bottom, #f7e296 30%, #ffffff 30%);
-}
 
 #btn-1:checked ~ .goods__list .goods__item--1 {
   opacity: 1;
@@ -467,29 +463,36 @@ body {
   border-color: #000;
 }
 
+.goods__wrap-img {
+  width: 550px;
+  height: 600px;
+
+}
+
 .goods__img {
   margin-top: 50px;
-  margin-left: 28px;
+  margin-left: 30px;
 }
 
 .goods__description {
   width: 500px;
-
+  margin-left: -130px;
 }
 
 .goods__item--3 .goods__description {
  width: 540px;
+ margin-left: -10px;
  z-index: 10;
 }
 
 .goods__item--2 .goods__img {
   margin-top: 65px;
-  margin-left: 50px;
+  margin-left: 55px;
 }
 
 .goods__item--3 .goods__img {
   margin-top: 115px;
-  margin-left: 10px;
+  margin-left: 9px;
 
 }
 
@@ -559,8 +562,8 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.goods__item--2 .bth {
-  margin-top: 21px;
+.btn--slider {
+  margin-top: 20px;
 }
 
 .goods__table {
@@ -591,6 +594,10 @@ body {
   line-height: 20px;
   font-weight: 300;
   color: #464646;
+}
+
+.goods__item--3 .goods__line .goods__cell:nth-child(1) {
+  padding-right: 45px;
 }
 
 .goods__list {
@@ -1252,10 +1259,10 @@ body {
 .additional-data__link::before {
   content: "";
   position: absolute;
-  bottom: 30px;
-  right: 0;
+  bottom: 27px;
+  right: -8px;
   display: block;
-  width: 30px;
+  width: 35px;
   height: 40px;
   background: url(../img/footer/logotupy.svg) no-repeat;
 }
@@ -1504,6 +1511,11 @@ body {
 
 /* стилизация фильтра и сортировки */
 
+.wrapper {
+  background-image: linear-gradient(to right, #ffffff 30%, #ffffff 30%);
+  overflow-x: hidden;
+}
+
 .container-catalog {
   width: 1160px;
   margin: 0 auto;
@@ -1695,7 +1707,7 @@ body {
   position: absolute;
   top: 5px;
   left: 2px;
-  width: 20px;
+  width: 25px;
   height: 20px;
   background-image: url(../img/catalog-filter/checkbox-on2.svg);
   background-repeat: no-repeat;
@@ -1739,8 +1751,8 @@ body {
 }
 
 .catalog-filter__input-radio:hover + .catalog-filter__desk::before {
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 0 4px #efefef,
+  background-color: #eee;
+  box-shadow: 0 0 0 4px #eee,
               0 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -1791,10 +1803,6 @@ body {
   width: 835px;
 }
 
-.catalog-products__wrap {
-  padding-left: 70px;
-}
-
 
 .sorting {
   display: flex;
@@ -1802,12 +1810,13 @@ body {
   width: 765px;
   min-height: 70px;
   margin-bottom: 70px;
+  margin-left: 70px;
   background-color: #ebebeb;
   position: relative;
 }
 
 
-/*.sorting::before {
+.sorting::before {
   content: "";
   display: block;
   width: 5000px;
@@ -1816,7 +1825,7 @@ body {
   position: absolute;
   top: 0;
   left: 765px;
-}*/
+}
 
 .sorting__list {
   display: flex;
@@ -1904,6 +1913,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 765px;
+  margin-left: 70px;
+
 }
 
 .catalog-products__item:nth-child(1n) {
@@ -1975,13 +1986,23 @@ body {
 }
 
 .catalog-products__text {
-
+  padding-top: 3px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
   color: #464646;
   margin: 0;
+}
+
+.catalog-products__item:nth-child(2n) .catalog-products__text {
+  padding-top: 11px;
+
+}
+
+.catalog-products__item:nth-child(2n) .catalog-products__title {
+  padding-top: 7px;
+
 }
 
 .catalog-products__actions .catalog-products__link {
@@ -2030,6 +2051,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 70px;
   background-color: #ebebeb;
 }
 

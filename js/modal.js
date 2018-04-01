@@ -3,7 +3,7 @@
   "use strict";
 
   var link = document.querySelector(".btn--write-us");
-  var popup = document.querySelector(".modal");
+  var popup = document.querySelector(".modal-wrapper");
   var close = popup.querySelector(".modal__close");
   var login = popup.querySelector("[name=login-name]");
   var form = popup.querySelector("form");

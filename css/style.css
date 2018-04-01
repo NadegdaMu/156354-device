@@ -61,7 +61,7 @@ body {
 .container {
   width: 1160px;
   margin: 0 auto;
-
+  position: relative;
 }
 
 .header-main {
@@ -1276,18 +1276,27 @@ body {
 
 /* стилизация модальных окон */
 
-.modal {
-  display: none;
-  width: 962px;
-  height: 550px;
+.modal-wrapper {
+  width: 100%;
+  height: 100vh;
   position: fixed;
-  top: 114px;
-  left: 150px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  display: none;
+
+}
+
+.modal {
+  width: 962px;
+  height: 557px;
   padding-top: 88px;
   background-color: #fff;
   box-shadow: 0 10px 40px 0px rgba(5,5,5,0.5);
-  z-index: 40;
-
+  position: relative;
 }
 
 .modal__close {
@@ -1412,7 +1421,7 @@ body {
 }
 
 .modal--show {
-  display: block;
+  display: flex;
 }
 
 /*  стилизация карты */

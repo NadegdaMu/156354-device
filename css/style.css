@@ -382,9 +382,8 @@ body {
 .goods__controls {
   position: absolute;
   top: 370px;
-  left: 1035px;
-  bottom: 200px;
-  right: 135px;
+  left: 985px;
+
   width: 100px;
   z-index: 20;
 

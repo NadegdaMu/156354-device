@@ -68,7 +68,7 @@ body {
   padding-top: 40px;
 }
 
-.container-wraper {
+.container-wrapper {
   width: 1120px;
   margin: 0 auto;
   padding: 0 20px;
@@ -76,7 +76,7 @@ body {
 
 }
 
-.container-wraper--catalog {
+.container-wrapper--catalog {
   min-height: 185px;
 }
 
@@ -1055,7 +1055,7 @@ body {
   padding-top: 60px;
   padding-bottom: 30px;
   background-color: #464646;
-
+  overflow-x: hidden;
 }
 
 /* блок additional-information */
@@ -1442,7 +1442,7 @@ body {
 
 /* стилизация h1 и хлебных крошек */
 
-.main-content__wraper {
+.main-content__wrapper {
   min-height: 180px;
   padding-left: 60px;
 }
@@ -1595,6 +1595,24 @@ body {
   border: none;
 }
 
+.catalog-filter__fieldset::before {
+  content: "";
+  width: 200px;
+  height: 2px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background-color: #000;
+}
+
+.catalog-filter__fieldset:nth-child(1) {
+  margin-top: 70px;
+}
+
+.catalog-filter__fieldset:nth-child(3) {
+  margin-top: 2px;
+}
+
 .catalog-filter__range {
   width: 150px; /* временно */
 }
@@ -1671,6 +1689,7 @@ body {
 
 .catalog-filter__fieldset:nth-of-type(2) {
   min-height: 283px;
+  margin-top: 1px;
 }
 
 .catalog-filter__fieldset:nth-of-type(2) .catalog-filter__legent {
@@ -1705,19 +1724,23 @@ body {
 .catalog-filter__input-checkbox:checked + .catalog-filter__desk::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 2px;
+  top: 6px;
+  left: 0px;
   width: 25px;
-  height: 20px;
+  height: 21px;
   background-image: url(../img/catalog-filter/checkbox-on2.svg);
   background-repeat: no-repeat;
   z-index: 10;
 
 }
 
-.catalog-filter__input-checkbox:hover + .catalog-filter__desk::after,
 .catalog-filter__input-checkbox:hover + .catalog-filter__desk::before {
   opacity: 0.6;
+}
+
+.catalog-filter__input-checkbox:hover + .catalog-filter__desk::after {
+  background-image: url(../img/catalog-filter/checkbox-on3.svg);
+  background-repeat: no-repeat;
 }
 
 
@@ -1810,7 +1833,7 @@ body {
   width: 765px;
   min-height: 70px;
   margin-bottom: 70px;
-  margin-left: 70px;
+  padding-left: 70px;
   background-color: #ebebeb;
   position: relative;
 }
@@ -1950,7 +1973,7 @@ body {
   opacity: 1;
 }
 
-.catalog-products__wraper {
+.catalog-products__wrapper {
   width: 220px;
   margin: auto;
   margin-top: 50%;
@@ -1973,6 +1996,7 @@ body {
 
 .catalog-products__title {
   margin: 0;
+  line-height: 23px;
 }
 
 .catalog-products__title .catalog-products__link {
@@ -1986,7 +2010,7 @@ body {
 }
 
 .catalog-products__text {
-  padding-top: 3px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1996,12 +2020,7 @@ body {
 }
 
 .catalog-products__item:nth-child(2n) .catalog-products__text {
-  padding-top: 11px;
-
-}
-
-.catalog-products__item:nth-child(2n) .catalog-products__title {
-  padding-top: 7px;
+  margin-top: 1px;
 
 }
 

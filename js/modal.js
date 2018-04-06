@@ -60,5 +60,41 @@
   });
 
 
+//модальная карта
+
+    var map1Open = document.querySelector(".information-company__img");
+    var mapPopup = document.querySelector(".map-wrapper");
+    var mapClose = mapPopup.querySelector(".modal-map__close");
+
+
+      map1Open.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.style.display="flex";
+        mapPopup.classList.add("modal-map--show");
+
+      });
+
+
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-map--show");
+        mapPopup.style.display = "none";
+
+
+      });
+
+
+
+       window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-map--show")) {
+            mapPopup.classList.remove("modal-map--show");
+            map2BigPopup.style.display = "none";
+            map2BigOpen.style.display = "none";
+
+          }
+        }
+      });
 
 
